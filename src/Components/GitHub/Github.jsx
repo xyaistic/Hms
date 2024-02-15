@@ -23,9 +23,8 @@ const Github = () => {
         <div className="flex-row">
           <h1 className='m-3  p-3'>{data.name}</h1>
           <h1 className='m-3  p-3 w-80'>{data.bio}</h1>
-          <h1 className='m-3 bg-zinc-500 p-3 text-white rounded-lg font-medium inline'>Followers : {data.followers.toString().slice(0, 2) +"K" }</h1>
-          <h1 className='m-3 bg-zinc-500 p-3 text-white rounded-lg font-medium inline'>Following : {`${data.following>1000?`${data.following.toString().slice(0, 1) +"K"}`:`.${data.following.toString().slice(0, 1) +"K"}`}`}</h1>
-          <button>click</button>
+          <h1 className='m-3 bg-zinc-500 p-3 text-white rounded-lg font-medium inline'>Followers : {data.followers}</h1>
+          <h1 className='m-3 bg-zinc-500 p-3 text-white rounded-lg font-medium inline'>Following : {data.following}</h1>
         </div>
       </div>
     </>
