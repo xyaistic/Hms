@@ -6,13 +6,14 @@ import Layout from './Components/Layout/Layout.jsx'
 import Home from './Components/Home/Home.jsx'
 import Counter from './Components/About/Counter.jsx'
 import Todo from './Components/Contact/Todo.jsx'
+import Login from './Components/Login/Login.jsx'
+import BookAppointment from './Components/BookAppointment/BookAppointment.jsx'
 
 const allRoutes = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
-      <Route path='' element={<Home />} />
-      <Route path='counter' element={<Counter />} />
+      <Route path='bookappointment' element={<BookAppointment />} />
       <Route path='todo' element={<Todo />} />
     </Route>
   )

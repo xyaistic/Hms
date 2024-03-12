@@ -9,10 +9,11 @@ const Header = () => {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                            src="https://www.freeiconspng.com/uploads/doctor-symbol-universal-png-2.png"
                             className="mr-3 h-12"
                             alt="Logo"
                         />
+                        <h1>Our Hospital</h1>
                     </Link>
                    
                     <div
@@ -24,7 +25,7 @@ const Header = () => {
                                 <NavLink
                                 to="/"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                                     }
                                 >
                                     Home
@@ -32,22 +33,32 @@ const Header = () => {
                             </li>
                             <li>
                                 <NavLink
-                                to="/counter"
+                                to="/bookappointment"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                                     }
                                 >
-                                    Counter
+                                    Book Appointment
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
                                 to="/todo"
                                     className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
                                     }
                                 >
-                                    Todo
+                                    Contact us
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                to="/todo"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                                    }
+                                >   
+                                    Sign out
                                 </NavLink>
                             </li>
                             

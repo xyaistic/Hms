@@ -9,10 +9,11 @@ const Footer = () => {
                         <div className="mb-6 md:mb-0">
                             <Link to="/" className="flex items-center">
                                 <img
-                                    src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                                    className="mr-3 h-16"
+                                    src="https://www.freeiconspng.com/uploads/doctor-symbol-universal-png-2.png"
+                                    className="mr-3 h-12"
                                     alt="Logo"
                                 />
+                                <h1>Our Hospital</h1>
                             </Link>
                         </div>
                         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -21,15 +22,15 @@ const Footer = () => {
                                 <ul className="text-gray-500 font-medium">
                                     <li className="mb-4">
 
-                                        <NavLink to={'/'} className={({isActive})=>
-                                             `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        <NavLink to={'/'} className={({ isActive }) =>
+                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                         }>
                                             Home
                                         </NavLink>
                                     </li>
                                     <li>
-                                    <NavLink to={'/about'} className={({isActive})=>
-                                             `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        <NavLink to={'/about'} className={({ isActive }) =>
+                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                         }>
                                             About
                                         </NavLink>
@@ -40,8 +41,8 @@ const Footer = () => {
                                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
                                 <ul className="text-gray-500 font-medium">
                                     <li className="mb-4">
-                                    <NavLink to={'/github'} className={({isActive})=>
-                                             `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                        <NavLink to={'/github'} className={({ isActive }) =>
+                                            `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                         }>
                                             Github
                                         </NavLink>
@@ -68,14 +69,15 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                     <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <span className="text-sm text-gray-500 sm:text-center">
                             © 2023
-                            <a href="https://hiteshchoudhary.com/" className="hover:underline">
-                                hiteshchoudhary
+                            <a href="https://hiteshchoudhary.com/" className="hover:underline mx-3">
+                                Ziya Afridi
                             </a>
                             . All Rights Reserved.
                         </span>
